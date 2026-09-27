@@ -24,11 +24,21 @@ nav{display:flex;align-items:center;gap:28px}nav a{font-size:13px;font-weight:60
 .secondary{background:white;color:var(--text)}.text-link{font-size:13px;font-weight:700;color:var(--accent);padding:10px 4px}
 .hero-proof{display:flex;gap:34px;border-top:1px solid var(--line);padding-top:25px}.hero-proof div{display:flex;flex-direction:column}.hero-proof strong{font-size:16px}.hero-proof span{font-size:11px;color:var(--faint);margin-top:3px}
 .hero-card{background:white;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow:hidden;max-width:390px;justify-self:end}
-.profile-art{height:300px;background:linear-gradient(145deg,#e8f2f1,#f4f7fa);display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--line)}.profile-art img{
-  width:55%;
-  height:70%;
-  object-fit:contain;
-  image-rendering:auto;
+.profile-art{
+  height:300px;
+  background:linear-gradient(145deg,#e8f2f1,#f4f7fa);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+
+.profile-art img{
+  width:220px;
+  height:260px;
+  object-fit:cover;
+  object-position:center;
   display:block;
 }
 .profile-card-body{padding:24px}.status{font:500 11px "JetBrains Mono",monospace;color:var(--accent)}.status i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#3da57b;margin-right:6px}.profile-card-body h2{font-size:21px;margin-top:14px}.profile-card-body>p{color:var(--muted);font-size:13px}.mini-tags,.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}.mini-tags span,.chips span{font:500 10px "JetBrains Mono",monospace;padding:5px 8px;border:1px solid var(--line);border-radius:6px;color:var(--muted);background:#fafcfd}
