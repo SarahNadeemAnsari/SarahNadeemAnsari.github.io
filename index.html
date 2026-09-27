@@ -3,603 +3,196 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sarah Nadeem Ansari — QA Engineer | Digital & Pixel Artist.</title>
-<meta name="description" content="Sarah Nadeem Ansari — QA Engineer, Software Testing, Security Testing. Portfolio of professional QA work, security testing practice, and personal software/game projects and game assets.">
+<title>Sarah Nadeem Ansari | QA Engineer</title>
+<meta name="description" content="Sarah Nadeem Ansari is a QA Engineer specializing in manual web and mobile testing, regression, functional testing, automation, API and security testing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- scanline / crt overlay -->
-<div class="crt-overlay" aria-hidden="true"></div>
-
-<!-- ============ NAV ============ -->
-<header class="menubar" id="menubar">
-  <div class="menubar-inner">
-    <a href="#home" class="menubar-logo">SN<span>_</span>A</a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="menu-links" id="menuLinks">
-      <a href="#home" class="menu-link" data-nav>HOME</a>
-      <a href="#about" class="menu-link" data-nav>ABOUT</a>
-      <a href="#experience" class="menu-link" data-nav>EXPERIENCE</a>
-      <a href="#security" class="menu-link" data-nav>SECURITY</a>
-      <a href="#projects" class="menu-link" data-nav>PROJECTS</a>
-      <a href="#skills" class="menu-link" data-nav>SKILLS</a>
-      <a href="#contact" class="menu-link cta-link" data-nav>CONTACT</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="#home">Sarah<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="menuLinks">
+      <a href="#about" data-nav>About</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#expertise" data-nav>Expertise</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a class="nav-button" href="#contact" data-nav>Contact</a>
     </nav>
   </div>
 </header>
 
 <main>
-
-<!-- ============ HERO ============ -->
 <section class="hero" id="home">
-  <div class="hero-grid">
-    <div class="hero-left">
-      <p class="eyebrow">// NEW GAME <span class="blink">_</span></p>
-      <h1 class="hero-title">SARAH NADEEM<br><span>ANSARI</span></h1>
-      <p class="hero-role">QA ENGINEER &nbsp;·&nbsp; SOFTWARE TESTING &nbsp;·&nbsp; PIXEL ARTIST </p>
-
-      <div class="terminal" id="heroTerminal">
-        <div class="terminal-bar"><span></span><span></span><span></span><p>guest@portfolio:~</p></div>
-        <div class="terminal-body" id="terminalBody"></div>
-      </div>
-
-      <div class="hero-actions">
-        <a href="#experience" class="btn btn-primary" data-nav>VIEW EXPERIENCE</a>
-        <a href="#projects" class="btn btn-ghost" data-nav>EXPLORE PROJECTS</a>
-        <a href="https://github.com/SarahNadeemAnsari" class="btn btn-ghost" target="_blank" rel="noopener">GITHUB ↗</a>
-        <a href="https://docs.google.com/document/d/1Jfw5FMF0NMUbWmXFqCphM83pb90Y_0UfR0qQtbMZbO8/edit?usp=sharing" class="btn btn-ghost" target="_blank" rel="noopener">RESUME ↗</a>
-      </div>
+  <div class="hero-content">
+    <p class="kicker">QA ENGINEER · SOFTWARE TESTING</p>
+    <h1>Building confidence in software<br><span>one test at a time.</span></h1>
+    <p class="hero-copy">I’m Sarah Nadeem Ansari, a QA Engineer based in Pakistan with 4+ years of hands-on experience testing real-world web and mobile applications. I specialize in manual testing, detailed defect investigation, regression, release validation, and growing test automation.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="#experience">View Experience</a>
+      <a class="button secondary" href="#projects">View Projects</a>
+      <a class="text-link" href="https://docs.google.com/document/d/1Jfw5FMF0NMUbWmXFqCphM83pb90Y_0UfR0qQtbMZbO8/edit?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
+      <a class="text-link" href="https://github.com/SarahNadeemAnsari" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
-
-    <div class="hero-right">
-      <div class="char-card panel">
-        <div class="char-card-head">
-          <span class="tag-pixel">PLAYER CARD</span>
-          <span class="char-status">● ONLINE</span>
-        </div>
-        <div class="char-portrait">
-          <img src="assets/portrait-sprite.png" alt="Pixel-art character sprite, originally drawn by Sarah for her RPG project" loading="lazy">
-        </div>
-        <div class="char-info">
-          <p class="char-name">Sarah Nadeem Ansari</p>
-          <p class="char-class">CLASS: QA Engineer</p>
-          <p class="char-sub">Computer Science Student</p>
-        </div>
-        <div class="char-stats">
-          <div class="stat-row">
-            <span class="stat-label">Testing &amp; QA</span>
-            <div class="stat-bar"><div class="stat-fill" style="--fill:88%"></div></div>
-          </div>
-          <div class="stat-row">
-            <span class="stat-label">Development</span>
-            <div class="stat-bar"><div class="stat-fill" style="--fill:72%"></div></div>
-          </div>
-          <div class="stat-row">
-            <span class="stat-label">Security Testing</span>
-            <div class="stat-bar"><div class="stat-fill" style="--fill:48%"></div></div>
-          </div>
-          <div class="stat-row">
-            <span class="stat-label">Automation</span>
-            <div class="stat-bar"><div class="stat-fill" style="--fill:40%"></div></div>
-          </div>
-          <div class="stat-row">
-            <span class="stat-label">Game Dev &amp; Art</span>
-            <div class="stat-bar"><div class="stat-fill" style="--fill:65%"></div></div>
-          </div>
-        </div>
-        <p class="char-footnote">Bars reflect current focus areas, not certified scores.</p>
-      </div>
+    <div class="hero-proof">
+      <div><strong>4+</strong><span>Years QA Experience</span></div>
+      <div><strong>Web + Mobile</strong><span>Real-world Testing</span></div>
+      <div><strong>Manual + Automation</strong><span>Quality Engineering</span></div>
     </div>
   </div>
-  <a href="#about" class="scroll-cue" data-nav aria-label="Scroll to About">▼ SCROLL</a>
+  <div class="hero-card">
+    <div class="profile-art"><img src="assets/portrait-sprite.png" alt="Pixel-art portrait created by Sarah" loading="lazy"></div>
+    <div class="profile-card-body">
+      <span class="status"><i></i> Available for QA opportunities</span>
+      <h2>Sarah Nadeem Ansari</h2>
+      <p>QA Engineer · Software Tester</p>
+      <div class="mini-tags"><span>Manual QA</span><span>Mobile</span><span>Web</span><span>Automation</span></div>
+    </div>
+  </div>
 </section>
 
-<!-- ============ ABOUT ============ -->
 <section class="section" id="about">
-  <p class="section-eyebrow">LEVEL 01</p>
-  <h2 class="section-title">ABOUT</h2>
-
-  <div class="about-grid">
-    <div class="dialogue-box panel">
-      <div class="dialogue-head">
-        <span class="tag-pixel">PLAYER LOG</span>
-      </div>
-      <p>I'm currently pursuing a Bachelor's degree in Computer Science while working professionally as a QA Engineer. My interest in software quality started through hands-on testing and gradually expanded into development, automation, and security.</p>
-      <p>I've worked with real-world web applications — testing functionality across staging and production environments, documenting defects, validating fixes, maintaining testing records, and collaborating with development teams.</p>
-      <p>Outside QA, I enjoy building software from scratch. I've developed full-stack applications, games, and interactive projects using a variety of languages and frameworks. My current long-term project is an original story-driven RPG that I'm building from scratch — programming, systems, pixel art, and animation included.</p>
-      <p>I'm particularly interested in growing toward QA automation and security-focused testing, while continuing to strengthen my development skills.</p>
+  <div class="section-heading"><p class="kicker">ABOUT</p><h2>Quality-focused. Technically curious.</h2></div>
+  <div class="two-column">
+    <div class="copy">
+      <p>I approach QA as more than checking whether a button works. I investigate workflows, user states, edge cases, data consistency, permissions, integrations, and the conditions that cause software to behave differently from what was intended.</p>
+      <p>My professional experience includes testing staging and production releases, creating and executing test cases, reporting reproducible defects, collaborating with developers, validating fixes, and running regression passes across interconnected features.</p>
+      <p>I also have a software development background, which helps me investigate issues beyond the interface and communicate technical findings clearly. Alongside QA, I have built web applications and games, giving me practical experience with application architecture, databases, APIs, debugging, game systems, and development workflows.</p>
     </div>
-
-    <div class="abilities">
-      <div class="ability-card panel">
-        <span class="ability-icon">[QA]</span>
-        <h3>QA Engineering</h3>
-        <p>Functional, regression, exploratory, integration, and workflow testing.</p>
-      </div>
-      <div class="ability-card panel">
-        <span class="ability-icon">[SEC]</span>
-        <h3>Security Testing</h3>
-        <p>Web app security testing, request inspection, SQL &amp; XML injection, Burp Suite, OWASP ZAP.</p>
-      </div>
-      <div class="ability-card panel">
-        <span class="ability-icon">[AUTO]</span>
-        <h3>Automation</h3>
-        <p>Pytest, Selenium, test automation woven into application projects.</p>
-      </div>
-      <div class="ability-card panel">
-        <span class="ability-icon">[DEV]</span>
-        <h3>Development</h3>
-        <p>Python, JavaScript, PHP, C, C++, C#, GDScript, HTML/CSS, backend basics.</p>
-      </div>
-      <div class="ability-card panel">
-        <span class="ability-icon">[GAME]</span>
-        <h3>Game Development</h3>
-        <p>Unity, Godot, Pygame — gameplay systems, enemy AI, level design.</p>
-      </div>
-      <div class="ability-card panel">
-        <span class="ability-icon">[ART]</span>
-        <h3>Technical Art</h3>
-        <p>Pixel art, custom game assets, animation, UI elements.</p>
-      </div>
+    <div class="about-list">
+      <div><span>01</span><b>Real-world QA</b><p>Professional testing across live products, releases, user workflows and production environments.</p></div>
+      <div><span>02</span><b>Technical investigation</b><p>Browser DevTools, API/request inspection, data validation and developer-oriented debugging.</p></div>
+      <div><span>03</span><b>Growing automation</b><p>Pytest and Selenium experience, with current focus on Playwright and TypeScript.</p></div>
+      <div><span>04</span><b>Builder mindset</b><p>Development and game projects give me a practical understanding of how products are built.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============ EXPERIENCE ============ -->
-<section class="section alt" id="experience">
-  <p class="section-eyebrow">LEVEL 02</p>
-  <h2 class="section-title">QUEST LOG <span class="section-title-sub">/ EXPERIENCE</span></h2>
-
-  <div class="quest-log">
-
-    <div class="quest panel">
-      <div class="quest-head">
-        <div>
-          <span class="quest-status active">IN PROGRESS</span>
-          <h3>QA Engineer</h3>
-          <p class="quest-org">Passu Technologies — Multan, Pakistan · Hybrid</p>
-        </div>
-        <span class="quest-time">JUN 2024 — PRESENT</span>
-      </div>
-      <p class="quest-brief">Working as a QA Engineer on web-based software applications: performing functional and exploratory testing across staging and production environments, and collaborating with development and senior QA staff throughout testing cycles.</p>
-      <ul class="quest-objectives">
-        <li>Perform functional, regression, exploratory, and integration testing of web applications across staging and production.</li>
-        <li>Design and execute test cases covering user workflows, business logic, UI behavior, data validation, and edge cases.</li>
-        <li>Identify, reproduce, document, and track defects with clear reproduction steps, expected/actual results, and evidence.</li>
-        <li>Test and validate functionality across customer, provider/interpreter, scoring, session, reporting, and preference-management workflows.</li>
-        <li>Maintain QA documentation and testing records using Google Sheets and test-management workflows.</li>
-        <li>Collaborate with developers and senior team members to report defects, verify fixes, and clarify requirements.</li>
+<section class="section tinted" id="experience">
+  <div class="section-heading"><p class="kicker">EXPERIENCE</p><h2>Professional QA experience</h2><p>Hands-on testing across web products, mobile experiences, AI-driven software, staging environments and production releases.</p></div>
+  <div class="timeline">
+    <article class="experience-card">
+      <div class="experience-top"><div><span class="role-label current">CURRENT</span><h3>QA Engineer</h3><p>WP Global Syndicate LLC · SonicVox</p></div><span class="date">2026 — Present</span></div>
+      <p class="experience-summary">QA for a rapidly evolving AI-based software platform with interconnected Studio, Workspace and content-generation workflows.</p>
+      <ul>
+        <li>Perform functional, exploratory, regression, smoke, sanity and UI testing across a large feature set.</li>
+        <li>Validate AI-powered workflows, generation pipelines, audio/TTS features, document processing, exports, dubbing and account behavior.</li>
+        <li>Test staging and production releases, investigate failures, verify fixes and perform targeted regression around changed functionality.</li>
+        <li>Identify edge cases involving credits, concurrency, limits, permissions, integrations, loading states and inconsistent data.</li>
+        <li>Create clear, reproducible defect reports and maintain structured retest notes and QA tracking.</li>
+        <li>Collaborate directly with developers during pre-launch and release validation.</li>
       </ul>
-    </div>
+      <div class="chips"><span>AI QA</span><span>Regression</span><span>Exploratory</span><span>Release Testing</span><span>Web App</span></div>
+    </article>
 
-    <div class="quest panel">
-      <div class="quest-head">
-        <div>
-          <span class="quest-status active">IN PROGRESS</span>
-          <h3>Full Stack Development Intern</h3>
-          <p class="quest-org">CodeAlpha — Remote</p>
-        </div>
-        <span class="quest-time">APR 2026 — PRESENT</span>
-      </div>
-      <p class="quest-brief">Building an Instagram-style social media web application as part of a professional development internship.</p>
-      <ul class="quest-objectives">
-        <li>Developed an Instagram-style social media web application as a full-stack project.</li>
-        <li>Implemented application functionality across frontend, backend, authentication, and data management.</li>
-        <li>Applied software development and debugging practices while building and integrating application modules.</li>
+    <article class="experience-card">
+      <div class="experience-top"><div><span class="role-label">PROFESSIONAL EXPERIENCE</span><h3>QA Engineer</h3><p>Passu Technologies · Multan, Pakistan</p></div><span class="date">2024 — 2026</span></div>
+      <p class="experience-summary">Hands-on QA for a production web platform, covering functional workflows, user roles, integrations, UI behavior and release validation.</p>
+      <ul>
+        <li>Performed manual functional, regression, exploratory, smoke and sanity testing across staging and production.</li>
+        <li>Designed and maintained test cases and test scenarios for complex user workflows and business rules.</li>
+        <li>Identified, reproduced and documented defects with clear steps, expected versus actual behavior and supporting evidence.</li>
+        <li>Tested responsive layouts, cross-browser behavior, permissions, account states, scheduling and interconnected workflows.</li>
+        <li>Retested fixes and performed regression testing to verify that changes did not break existing functionality.</li>
+        <li>Worked closely with developers and maintained organized QA records using spreadsheets and issue-management workflows.</li>
       </ul>
-    </div>
+      <div class="chips"><span>Manual QA</span><span>Web Testing</span><span>Regression</span><span>Responsive</span><span>Production</span></div>
+    </article>
 
-    <div class="quest panel">
-      <div class="quest-head">
-        <div>
-          <span class="quest-status done">COMPLETED</span>
-          <h3>Freelance QA Tester</h3>
-          <p class="quest-org">Digivante — Remote</p>
-        </div>
-        <span class="quest-time">FREELANCE</span>
-      </div>
-      <ul class="quest-objectives">
-        <li>Performed manual, functional, exploratory, and usability testing across web and digital products.</li>
-        <li>Identified and documented reproducible defects with clear steps, expected/actual results, and evidence.</li>
-        <li>Worked independently within project-specific testing requirements, scopes, and deadlines.</li>
-      </ul>
-    </div>
+    <article class="experience-card compact">
+      <div class="experience-top"><div><span class="role-label">FREELANCE</span><h3>QA Tester</h3><p>Digivante</p></div><span class="date">Freelance</span></div>
+      <p>Manual functional, exploratory and usability testing across digital products, with structured defect reporting and project-specific testing requirements.</p>
+      <div class="chips"><span>Functional</span><span>Exploratory</span><span>Usability</span><span>Bug Reporting</span></div>
+    </article>
 
-    <div class="quest panel">
-      <div class="quest-head">
-        <div>
-          <span class="quest-status done">COMPLETED</span>
-          <h3>Crowd QA Tester</h3>
-          <p class="quest-org">uTest &amp; TesterWork — Remote</p>
-        </div>
-        <span class="quest-time">FREELANCE</span>
-      </div>
-      <ul class="quest-objectives">
-        <li>Applied uTest Academy testing practices through real-world manual and exploratory testing projects.</li>
-        <li>Executed test scenarios, identified defects, and submitted structured bug reports with supporting evidence.</li>
-      </ul>
-    </div>
+    <article class="experience-card compact">
+      <div class="experience-top"><div><span class="role-label">CROWDTESTING</span><h3>QA Tester</h3><p>uTest &amp; TesterWork</p></div><span class="date">Freelance</span></div>
+      <p>Applied structured testing practices to real-world crowdtesting projects, executing scenarios, finding defects and submitting evidence-backed reports.</p>
+      <div class="chips"><span>Manual Testing</span><span>Test Execution</span><span>Defect Reporting</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="expertise">
+  <div class="section-heading"><p class="kicker">QA EXPERTISE</p><h2>What I test</h2></div>
+  <div class="expertise-grid">
+    <article><div class="icon">01</div><h3>Functional Testing</h3><p>Business rules, workflows, forms, authentication, user roles, permissions, integrations and error handling.</p></article>
+    <article><div class="icon">02</div><h3>Regression &amp; Release</h3><p>Targeted and broad regression, smoke/sanity checks, release validation and retesting fixes before and after deployment.</p></article>
+    <article><div class="icon">03</div><h3>Web &amp; Mobile</h3><p>Responsive web applications plus iOS and Android testing, navigation, UI behavior, device-specific issues and real-user flows.</p></article>
+    <article><div class="icon">04</div><h3>Exploratory Testing</h3><p>Risk-based exploration, edge cases, unexpected states, boundary conditions and workflows beyond the happy path.</p></article>
+    <article><div class="icon">05</div><h3>API &amp; Data Testing</h3><p>Requests, parameters, headers, authentication, status codes, response data, invalid inputs and consistency.</p></article>
+    <article><div class="icon">06</div><h3>Security Testing</h3><p>Controlled practice with Burp Suite, OWASP ZAP, input validation, SQL injection and XML injection concepts.</p></article>
+  </div>
+</section>
+
+<section class="section tinted" id="automation">
+  <div class="section-heading"><p class="kicker">AUTOMATION</p><h2>Manual QA with an automation mindset</h2><p>I use automation where it adds value, while keeping manual exploratory testing at the center of product quality.</p></div>
+  <div class="automation-grid">
+    <div class="automation-card"><span>PYTEST</span><h3>Python Test Automation</h3><p>Automated testing experience through application projects and structured test suites.</p></div>
+    <div class="automation-card"><span>SELENIUM</span><h3>Web Automation</h3><p>Experience building browser-based automated checks and integrating testing into development projects.</p></div>
+    <div class="automation-card"><span>PLAYWRIGHT</span><h3>Current Focus</h3><p>Learning Playwright with TypeScript to strengthen modern end-to-end web automation skills.</p></div>
+    <div class="automation-card"><span>STRATEGY</span><h3>Where Automation Helps</h3><p>Repeatable regression checks, stable workflows and high-value scenarios that benefit from consistent execution.</p></div>
+  </div>
+</section>
+
+<section class="section" id="artifacts">
+  <div class="section-heading"><p class="kicker">QA WORK SAMPLES</p><h2>How I document quality</h2><p>Professional-style examples recreated with sample data. No proprietary client information is included.</p></div>
+  <div class="artifact-grid">
+    <article class="artifact"><span class="artifact-label">TEST CASE</span><h3>TC-001 · Valid Login</h3><ol><li>Open the login page.</li><li>Enter a valid registered email.</li><li>Enter the correct password.</li><li>Select Sign In.</li></ol><div class="result"><b>Expected</b><span>User reaches the authenticated dashboard.</span></div></article>
+    <article class="artifact"><span class="artifact-label">BUG REPORT</span><h3>BUG-001 · Form fails to submit</h3><dl><dt>Environment</dt><dd>Staging · Chrome · Windows</dd><dt>Steps</dt><dd>Enter valid credentials → select Continue.</dd><dt>Expected</dt><dd>User is authenticated.</dd><dt>Actual</dt><dd>Form remains on the login page.</dd></dl></article>
+    <article class="artifact"><span class="artifact-label">REGRESSION</span><h3>Release validation</h3><div class="metrics"><b>124<small>Cases</small></b><b>108<small>Passed</small></b><b>9<small>Failed</small></b><b>7<small>Blocked</small></b></div><p class="note">Illustrative sample dashboard.</p></article>
+  </div>
+</section>
+
+<section class="section tinted" id="projects">
+  <div class="section-heading"><p class="kicker">PROJECTS</p><h2>Built, tested and explored</h2><p>My development projects strengthen my understanding of software architecture, implementation, debugging and the ways real products fail.</p></div>
+  <div class="project-filter" id="filterBar">
+    <button class="filter-btn active" data-filter="all">All</button><button class="filter-btn" data-filter="web">Web</button><button class="filter-btn" data-filter="qa">QA</button><button class="filter-btn" data-filter="games">Games</button><button class="filter-btn" data-filter="ml">AI / ML</button>
+  </div>
+  <div class="projects-grid" id="projectGrid">
+    <article class="project-card" data-cat="web"><div class="project-image"><span>WEB APPLICATION</span></div><div class="project-body"><span class="project-type">FULL-STACK DEVELOPMENT</span><h3>Instagram-Style Social Media Platform</h3><p>Full-stack social media application built during my CodeAlpha development internship, covering frontend, backend, authentication and data management.</p><div class="chips"><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>HTML/CSS</span></div><a class="project-link" href="https://github.com/SarahNadeemAnsari/CodeAlpha_social-media-app" target="_blank" rel="noopener">View repository ↗</a></div></article>
+    <article class="project-card" data-cat="web qa"><div class="project-image"><span>QA + AUTOMATION</span></div><div class="project-body"><span class="project-type">QA PROJECT</span><h3>Mini E-Commerce Application</h3><p>Built an e-commerce application while designing test cases and implementing automated tests across application modules. A practical developer-plus-tester project.</p><div class="chips"><span>JavaScript</span><span>PHP</span><span>QA</span><span>Automation</span></div><a class="project-link" href="https://github.com/SarahNadeemAnsari/mini-ecommerce-java-qa" target="_blank" rel="noopener">View repository ↗</a></div></article>
+    <article class="project-card" data-cat="web"><div class="project-image"><span>WEB APPLICATION</span></div><div class="project-body"><span class="project-type">PERSONAL PROJECT</span><h3>DearDiary</h3><p>Personal diary web application with registration, authentication, session handling and CRUD diary entries linked to individual accounts.</p><div class="chips"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span></div><a class="project-link" href="https://github.com/SarahNadeemAnsari/DearDiary_app" target="_blank" rel="noopener">View repository ↗</a></div></article>
+    <article class="project-card" data-cat="games"><div class="project-image"><span>UNITY · GAME</span></div><div class="project-body"><span class="project-type">GAME DEVELOPMENT</span><h3>Endless Car Driving Game</h3><p>Unity game project involving player interaction, driving mechanics, scoring/progression and gameplay systems.</p><div class="chips"><span>Unity</span><span>C#</span></div></div></article>
+    <article class="project-card" data-cat="games"><div class="project-image image-sprite"><img src="assets/project-platformer.png" alt="Knight platformer sprite sheet" loading="lazy"></div><div class="project-body"><span class="project-type">GAME DEVELOPMENT</span><h3>2D Platformer</h3><p>Godot platformer with player movement, enemy AI, health and score systems, level design and game-state management.</p><div class="chips"><span>Godot</span><span>GDScript</span></div><a class="project-link" href="https://github.com/SarahNadeemAnsari/Godot-Game" target="_blank" rel="noopener">View repository ↗</a></div></article>
+    <article class="project-card" data-cat="games"><div class="project-image"><img src="assets/project-space-invaders.jpg" alt="Space Invaders project screen" loading="lazy"></div><div class="project-body"><span class="project-type">GAME DEVELOPMENT</span><h3>Space Invaders</h3><p>Arcade game clone covering movement, shooting, collision detection, enemy waves and win/loss conditions.</p><div class="chips"><span>Python</span><span>Pygame</span></div><a class="project-link" href="https://github.com/SarahNadeemAnsari/Space-Invader-Game" target="_blank" rel="noopener">View repository ↗</a></div></article>
+    <article class="project-card wide" data-cat="games"><div class="project-image"><img src="assets/project-rpg.jpg" alt="Scene from Sarah's original RPG project" loading="lazy"></div><div class="project-body"><span class="project-type">LONG-TERM GAME PROJECT</span><h3>Original Story-Driven RPG</h3><p>An original game project combining programming, systems design, narrative, pixel art and animation. The project explores quests, dialogue, branching storylines, combat and character progression.</p><div class="chips"><span>Godot</span><span>GDScript</span><span>Game Systems</span><span>Pixel Art</span></div><a class="project-link" href="https://github.com/SarahNadeemAnsari/RPG-game-assets" target="_blank" rel="noopener">View art repository ↗</a></div></article>
+    <article class="project-card" data-cat="ml"><div class="project-image"><span>AI / MACHINE LEARNING</span></div><div class="project-body"><span class="project-type">ML PROJECT</span><h3>Onion Disease Detection</h3><p>AI-powered image classification project using a CNN and Streamlit for real-time disease detection from images.</p><div class="chips"><span>Python</span><span>CNN</span><span>Streamlit</span></div><a class="project-link" href="https://github.com/SarahNadeemAnsari/ML_Model_Onion_Disease_Detection" target="_blank" rel="noopener">View repository ↗</a></div></article>
   </div>
 
-  <!-- QA documentation showcase -->
-  <div class="showcase">
-    <p class="section-eyebrow">SIDE QUEST</p>
-    <h3 class="showcase-title">SAMPLE QA ARTIFACTS</h3>
-    <p class="showcase-note">The examples below are recreated demonstrations of the artifact formats I use professionally. They use sample data only and do not contain proprietary client information.</p>
-
-    <div class="showcase-grid">
-      <div class="panel showcase-card">
-        <span class="tag-pixel">TEST CASES</span>
-        <table class="sample-table">
-          <thead><tr><th>ID</th><th>Scenario</th><th>Expected</th><th>Result</th></tr></thead>
-          <tbody>
-            <tr><td>TC-001</td><td>Valid login</td><td>User reaches dashboard</td><td class="pass">PASS</td></tr>
-            <tr><td>TC-002</td><td>Invalid password</td><td>Error displayed</td><td class="pass">PASS</td></tr>
-            <tr><td>TC-003</td><td>Empty email field</td><td>Validation message shown</td><td class="pass">PASS</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="panel showcase-card">
-        <span class="tag-pixel">BUG REPORT</span>
-        <p class="bug-id">BUG-001 · Login button fails to submit valid form</p>
-        <dl class="bug-meta">
-          <dt>Environment</dt><dd>Staging (sample)</dd>
-          <dt>Steps</dt><dd>1. Open login page. 2. Enter valid credentials. 3. Click Continue.</dd>
-          <dt>Expected</dt><dd>User is authenticated.</dd>
-          <dt>Actual</dt><dd>Form does not submit.</dd>
-          <dt>Evidence</dt><dd class="placeholder-inline">[ screenshot / recording placeholder ]</dd>
-        </dl>
-      </div>
-
-      <div class="panel showcase-card">
-        <span class="tag-pixel">RUN SUMMARY</span>
-        <div class="dashboard-grid">
-          <div><span class="dash-num">124</span><span class="dash-label">Test Cases</span></div>
-          <div><span class="dash-num">108</span><span class="dash-label">Passed</span></div>
-          <div><span class="dash-num">9</span><span class="dash-label">Failed</span></div>
-          <div><span class="dash-num">7</span><span class="dash-label">Blocked</span></div>
-          <div><span class="dash-num">17</span><span class="dash-label">Defects Found</span></div>
-          <div><span class="dash-num">1</span><span class="dash-label">Critical</span></div>
-        </div>
-        <p class="showcase-footnote">Sample dashboard — figures are illustrative.</p>
-      </div>
+  <div class="art-strip">
+    <div><p class="kicker">SECONDARY CREATIVE WORK</p><h3>Pixel art &amp; game assets</h3><p>Original sprites and assets remain part of my portfolio, but they support the story rather than taking over the whole website.</p></div>
+    <div class="sprite-row">
+      <img src="assets/art-girl.png" alt="Character sprite" loading="lazy"><img src="assets/art-villager.png" alt="Villager sprite" loading="lazy"><img src="assets/art-house.png" alt="House asset" loading="lazy"><img src="assets/art-sword.png" alt="Sword sprite" loading="lazy"><img src="assets/art-mushroom.png" alt="Mushroom sprite" loading="lazy"><img src="assets/art-potion.png" alt="Potion sprite" loading="lazy">
     </div>
   </div>
 </section>
 
-<!-- ============ SECURITY (BESTIARY) ============ -->
-<section class="section" id="security">
-  <p class="section-eyebrow">LEVEL 03</p>
-  <h2 class="section-title">BESTIARY <span class="section-title-sub">/ SECURITY TESTING</span></h2>
-  <p class="section-intro">I'm expanding my QA background into web application security testing — understanding how applications handle requests, user input, authentication, data, and backend interactions. Entries below are logged as I study and practice each one.</p>
-
-  <div class="bestiary-grid">
-    <div class="beast-card panel">
-      <div class="beast-head">
-        <span class="beast-name">SQL Injection</span>
-        <span class="beast-tag studied">STUDIED · PRACTICED</span>
-      </div>
-      <p>Practiced SQL injection techniques through 10+ controlled PortSwigger Web Security Academy labs, learning how vulnerable application inputs can influence backend database queries.</p>
-      <ul class="beast-notes">
-        <li>Identifying the vulnerable input</li>
-        <li>Reading how requests and responses change</li>
-        <li>Confirming the vulnerability safely</li>
-        <li>Reasoning through mitigation</li>
-      </ul>
-    </div>
-
-    <div class="beast-card panel">
-      <div class="beast-head">
-        <span class="beast-name">XML Injection</span>
-        <span class="beast-tag studied">STUDIED · PRACTICED</span>
-      </div>
-      <p>Practiced XML-related injection testing in controlled environments to understand how unsafe XML processing can affect application behavior.</p>
-    </div>
-
-    <div class="beast-card panel">
-      <div class="beast-head">
-        <span class="beast-name">Burp Suite</span>
-        <span class="beast-tag tool">TOOL</span>
-      </div>
-      <ul class="beast-notes">
-        <li>Intercepting HTTP requests</li>
-        <li>Inspecting request parameters &amp; cookies</li>
-        <li>Modifying and replaying requests</li>
-        <li>Observing application responses</li>
-      </ul>
-    </div>
-
-    <div class="beast-card panel">
-      <div class="beast-head">
-        <span class="beast-name">OWASP ZAP</span>
-        <span class="beast-tag tool">TOOL</span>
-      </div>
-      <p>Used for learning and practicing web application security testing and identifying potential vulnerabilities in controlled environments.</p>
-    </div>
-  </div>
-
-  <div class="api-block panel">
-    <span class="tag-pixel">API TESTING</span>
-    <div class="api-grid">
-      <div>
-        <p class="api-heading">What I test</p>
-        <p class="api-text">Request methods, parameters, headers, authentication, status codes, response bodies, error handling, invalid inputs, boundary conditions.</p>
-      </div>
-      <div>
-        <p class="api-heading">Tools</p>
-        <p class="api-text">Postman · Browser DevTools · Burp Suite</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PROJECTS (INVENTORY) ============ -->
-<section class="section alt" id="projects">
-  <p class="section-eyebrow">LEVEL 04</p>
-  <h2 class="section-title">INVENTORY <span class="section-title-sub">/ PROJECTS</span></h2>
-
-  <div class="filter-bar" id="filterBar">
-    <button class="filter-btn active" data-filter="all">ALL</button>
-    <button class="filter-btn" data-filter="web">WEB</button>
-    <button class="filter-btn" data-filter="qa">QA</button>
-    <button class="filter-btn" data-filter="games">GAMES</button>
-  </div>
-
-  <div class="project-grid" id="projectGrid">
-
-    <article class="project-card panel" data-cat="web">
-      <div class="project-shot slim"><span>WEB APPLICATION</span></div>
-      <div class="project-body">
-        <h3>Instagram-Style Social Media Platform</h3>
-        <p class="project-context">CodeAlpha — Full Stack Development Internship</p>
-        <p>Full-stack social media application inspired by Instagram, integrating frontend, backend, authentication, and data-management components.</p>
-        <div class="tag-row">
-          <span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">HTML/CSS</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="link-pixel">GITHUB [placeholder]</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="project-card panel" data-cat="web qa">
-      <div class="project-shot slim"><span>WEB APP · QA</span></div>
-      <div class="project-body">
-        <div class="project-badge">QA + AUTOMATION</div>
-        <h3>Mini E-Commerce Application</h3>
-        <p class="project-context">Personal project</p>
-        <p>Built an e-commerce application while simultaneously designing test cases and progressively implementing automated testing across its modules — developer, tester, and automation engineer in one project.</p>
-        <div class="tag-row">
-          <span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">QA</span><span class="tag">Test Automation</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/SarahNadeemAnsari/mini-ecommerce-java-qa" class="link-pixel" target="_blank" rel="noopener">GITHUB ↗</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="project-card panel" data-cat="web">
-      <div class="project-shot slim"><span>WEB APPLICATION</span></div>
-      <div class="project-body">
-        <h3>Personal Diary Web App</h3>
-        <p class="project-context">Personal project</p>
-        <p>CRUD diary application with authentication, session handling, and full create/read/update/delete entry management.</p>
-        <div class="tag-row">
-          <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">HTML/CSS</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/SarahNadeemAnsari/DearDiary_app" class="link-pixel" target="_blank" rel="noopener">GITHUB ↗</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="project-card panel" data-cat="games">
-      <div class="project-shot slim"><span>GAME PROTOTYPE</span></div>
-      <div class="project-body">
-        <h3>Endless Car Driving Game</h3>
-        <p class="project-context">Personal project</p>
-        <p>Endless driving game built in Unity, implementing gameplay mechanics, player interaction, scoring/progression, and custom game elements.</p>
-        <div class="tag-row">
-          <span class="tag">Unity</span><span class="tag">C#</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="link-pixel">GITHUB [placeholder]</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="project-card panel" data-cat="games">
-      <div class="project-shot sprite">
-        <img src="assets/project-platformer.png" alt="Knight character spritesheet — idle, run, roll, hit, and death animation frames" loading="lazy">
-      </div>
-      <div class="project-body">
-        <h3>2D Platformer</h3>
-        <p class="project-context">Personal project</p>
-        <p>Platformer with player movement, enemy AI, health and score systems, level design, and game-state management.</p>
-        <div class="tag-row">
-          <span class="tag">Godot</span><span class="tag">GDScript</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/SarahNadeemAnsari/Godot-Game" class="link-pixel" target="_blank" rel="noopener">GITHUB ↗</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="project-card panel" data-cat="games">
-      <div class="project-shot">
-        <img src="assets/project-space-invaders.jpg" alt="Space Invaders main menu screen artwork" loading="lazy">
-      </div>
-      <div class="project-body">
-        <h3>Space Invaders</h3>
-        <p class="project-context">Personal project</p>
-        <p>Classic arcade clone covering player movement, shooting, collision detection, enemy waves, and win/loss conditions.</p>
-        <div class="tag-row">
-          <span class="tag">Python</span><span class="tag">Pygame</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/SarahNadeemAnsari/Space-Invader-Game" class="link-pixel" target="_blank" rel="noopener">GITHUB ↗</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="project-card panel featured" data-cat="games">
-      <div class="project-shot">
-        <img src="assets/project-rpg.jpg" alt="A small village scene composed from Sarah's original RPG pixel art sprites" loading="lazy">
-      </div>
-      <div class="project-body">
-        <div class="project-badge alt">FLAGSHIP PROJECT</div>
-        <h3>Original Story-Based RPG</h3>
-        <p class="project-context">Personal project — in progress</p>
-        <p>An original story-driven RPG being developed from scratch: programming, game design, narrative, pixel art, animation, and systems all built independently. Current systems include a quest system, dialogue trees, branching storylines, a battle system, and character progression.</p>
-        <div class="tag-row">
-          <span class="tag">Godot</span><span class="tag">GDScript</span><span class="tag">Pixel Art</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/SarahNadeemAnsari/RPG-game-assets" class="link-pixel" target="_blank" rel="noopener">ART ASSETS REPO ↗</a>
-        </div>
-      </div>
-    </article>
-
-  </div>
-
-  <!-- Game art gallery -->
-  <div class="gallery-block">
-    <p class="section-eyebrow">BONUS AREA</p>
-    <h3 class="showcase-title">PIXEL ART &amp; GAME ASSETS</h3>
-    <p class="showcase-note">Original sprites from Sarah's game projects — click a slot to preview.</p>
-    <div class="art-grid" id="artGrid">
-      <button class="art-slot panel" data-label="Character sprite"><img src="assets/art-girl.png" alt="Original character sprite" loading="lazy"></button>
-      <button class="art-slot panel" data-label="NPC sprite"><img src="assets/art-villager.png" alt="Villager NPC sprite" loading="lazy"></button>
-      <button class="art-slot panel" data-label="Environment asset"><img src="assets/art-house.png" alt="House environment asset" loading="lazy"></button>
-      <button class="art-slot panel" data-label="Item sprite"><img src="assets/art-sword.png" alt="Sword item sprite" loading="lazy"></button>
-      <button class="art-slot panel" data-label="Prop sprite"><img src="assets/art-mushroom.png" alt="Mushroom prop sprite" loading="lazy"></button>
-      <button class="art-slot panel" data-label="Item sprite"><img src="assets/art-potion.png" alt="Potion item sprite" loading="lazy"></button>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SKILLS ============ -->
 <section class="section" id="skills">
-  <p class="section-eyebrow">LEVEL 05</p>
-  <h2 class="section-title">SKILL TREE <span class="section-title-sub">/ SKILLS</span></h2>
-
-  <div class="skill-tree">
-    <div class="skill-branch panel">
-      <h3>QA</h3>
-      <div class="tag-row">
-        <span class="tag">Manual Testing</span><span class="tag">Functional</span><span class="tag">Regression</span>
-        <span class="tag">Exploratory</span><span class="tag">Integration</span><span class="tag">Test Design</span>
-        <span class="tag">Bug Reporting</span><span class="tag">Test Documentation</span>
-      </div>
-    </div>
-    <div class="skill-branch panel">
-      <h3>Security</h3>
-      <div class="tag-row">
-        <span class="tag">Burp Suite</span><span class="tag">OWASP ZAP</span><span class="tag">SQL Injection</span>
-        <span class="tag">XML Injection</span><span class="tag">Input Validation</span><span class="tag">Request Inspection</span>
-      </div>
-    </div>
-    <div class="skill-branch panel">
-      <h3>Automation</h3>
-      <div class="tag-row">
-        <span class="tag">Pytest</span><span class="tag">Selenium</span>
-      </div>
-    </div>
-    <div class="skill-branch panel">
-      <h3>Programming</h3>
-      <div class="tag-row">
-        <span class="tag">Python</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">C#</span>
-        <span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">GDScript</span>
-      </div>
-    </div>
-    <div class="skill-branch panel">
-      <h3>Web</h3>
-      <div class="tag-row">
-        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">MySQL</span>
-        <span class="tag">Laravel</span><span class="tag">Node.js</span><span class="tag">React</span><span class="tag">MongoDB</span>
-      </div>
-    </div>
-    <div class="skill-branch panel">
-      <h3>Games &amp; Art</h3>
-      <div class="tag-row">
-        <span class="tag">Unity</span><span class="tag">Godot</span><span class="tag">Pygame</span>
-        <span class="tag">Pixel Art</span><span class="tag">Animation</span><span class="tag">Game Asset Design</span>
-      </div>
-    </div>
+  <div class="section-heading"><p class="kicker">SKILLS</p><h2>Technical toolkit</h2></div>
+  <div class="skills-grid">
+    <div><h3>QA &amp; Testing</h3><p>Manual Testing · Functional · Regression · Exploratory · Smoke · Sanity · Integration · UI/UX · Responsive · Cross-browser · Mobile Testing · Test Case Design · Bug Reporting</p></div>
+    <div><h3>Automation</h3><p>Pytest · Selenium · Playwright · TypeScript · Test Automation · End-to-End Testing</p></div>
+    <div><h3>API &amp; Security</h3><p>Postman · Browser DevTools · Burp Suite · OWASP ZAP · Request Inspection · Input Validation · SQL Injection · XML Injection</p></div>
+    <div><h3>Programming</h3><p>Python · JavaScript · PHP · C · C++ · C# · GDScript · HTML · CSS</p></div>
+    <div><h3>Web &amp; Data</h3><p>Laravel · React · Node.js · MySQL · MongoDB · Git · GitHub</p></div>
+    <div><h3>Game Development</h3><p>Unity · Godot · Pygame · Gameplay Systems · Enemy AI · Level Design · Pixel Art · Animation</p></div>
   </div>
-
-  <div class="edu-training">
-    <div class="panel edu-card">
-      <span class="tag-pixel">EDUCATION</span>
-      <h3>BS Computer Science</h3>
-      <p class="edu-org">MNS University of Agriculture, Multan</p>
-      <p class="edu-date">Expected September 2027</p>
-      <div class="tag-row small">
-        <span class="tag">Information Security</span><span class="tag">Databases</span>
-        <span class="tag">Web Technologies</span><span class="tag">Game Development</span>
-        <span class="tag">Machine Learning</span>
-      </div>
-    </div>
-    <div class="panel edu-card">
-      <span class="tag-pixel">TRAINING</span>
-      <h3>uTest Academy</h3>
-      <p class="edu-org">Software testing fundamentals, applied through real-world crowdtesting projects.</p>
-      <a href="https://github.com/SarahNadeemAnsari" class="link-pixel" target="_blank" rel="noopener">CERTIFICATE / PROFILE [placeholder]</a>
-    </div>
-  </div>
+  <div class="education"><div><span class="kicker">EDUCATION</span><h3>BS Computer Science</h3><p>Expected September 2027</p></div><div><span class="kicker">TRAINING</span><h3>QA &amp; Automation</h3><p>uTest Academy · QA automation certification · TAU Intro to Playwright · ongoing Playwright/TypeScript learning</p></div></div>
 </section>
 
-<!-- ============ CONTACT ============ -->
-<footer class="section contact" id="contact">
-  <p class="section-eyebrow">SAVE POINT</p>
-  <h2 class="section-title">CONTINUE? <span class="section-title-sub">/ CONTACT</span></h2>
-  <p class="section-intro">Interested in QA, software testing, automation, security testing, or collaborative development? Let's talk.</p>
-
-  <div class="contact-grid">
-    <a href="mailto:sarahnadeemansari@gmail.com" class="contact-card panel">
-      <span class="tag-pixel">EMAIL</span>
-      <p>sarahnadeemansari@gmail.com</p>
-    </a>
-    <a href="https://www.linkedin.com/in/sarah-nadeem-ansari/" class="contact-card panel" target="_blank" rel="noopener">
-      <span class="tag-pixel">LINKEDIN</span>
-      <p>/in/sarah-nadeem-ansari</p>
-    </a>
-    <a href="https://github.com/SarahNadeemAnsari" class="contact-card panel" target="_blank" rel="noopener">
-      <span class="tag-pixel">GITHUB</span>
-      <p>@SarahNadeemAnsari</p>
-    </a>
-    <a href="https://docs.google.com/document/d/1Jfw5FMF0NMUbWmXFqCphM83pb90Y_0UfR0qQtbMZbO8/edit?usp=sharing" class="contact-card panel" target="_blank" rel="noopener">
-      <span class="tag-pixel">RESUME</span>
-      <p>View / Download</p>
-    </a>
+<section class="section contact-section" id="contact">
+  <div class="contact-box">
+    <div><p class="kicker">CONTACT</p><h2>Let’s build better software.</h2><p>Available for QA engineering, manual testing, mobile/web testing, regression, release validation and QA automation opportunities.</p></div>
+    <div class="contact-actions"><a class="button primary" href="mailto:sarahnadeemansari@gmail.com">Email Me</a><a class="button secondary" href="https://www.linkedin.com/in/sarah-nadeem-ansari/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="button secondary" href="https://github.com/SarahNadeemAnsari" target="_blank" rel="noopener">GitHub ↗</a></div>
   </div>
-
-  <p class="contact-meta">Multan, Pakistan &nbsp;·&nbsp; +92 340 3276232</p>
-
-  <p class="footer-line">© <span id="year"></span> Sarah Nadeem Ansari — built with HTML, CSS &amp; JS, hosted on GitHub Pages.</p>
-</footer>
-
+  <footer>© <span id="year"></span> Sarah Nadeem Ansari · QA Engineer · Pakistan</footer>
+</section>
 </main>
-
-<!-- lightbox for art gallery -->
-<div class="lightbox" id="lightbox">
-  <div class="lightbox-inner panel">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
-    <div class="lightbox-shot">
-      <img id="lightboxImg" src="" alt="" style="display:none;">
-      <span id="lightboxLabel"></span>
-    </div>
-    <p class="lightbox-caption" id="lightboxCaption"></p>
-  </div>
-</div>
-
 <script src="script.js"></script>
 </body>
 </html>
