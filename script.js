@@ -1,5 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* ---------- professional profile photo ---------- */
+  const profileImg = document.querySelector('.profile-art img');
+  if (profileImg) {
+    profileImg.src = 'assets/sarah-profile.svg';
+    profileImg.alt = 'Sarah Nadeem Ansari, QA Engineer';
+    profileImg.style.width = '100%';
+    profileImg.style.height = '100%';
+    profileImg.style.objectFit = 'cover';
+    profileImg.style.imageRendering = 'auto';
+  }
+
   /* ---------- footer year ---------- */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
